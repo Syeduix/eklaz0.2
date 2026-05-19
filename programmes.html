@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programmes — E-Klaz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container row">
+    <div>📧 info@eklaz.com &nbsp;&nbsp; 📞 +44 203 239 8420</div>
+    <div class="links"><a href="#">🌐 English</a><a href="#">Student Login</a></div>
+  </div>
+</div>
+<header class="site">
+  <div class="container row">
+    <a href="index.html" class="logo">E <span class="dot">·</span> KLAZ</a>
+    <nav class="primary">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programmes.html" class="active">Programmes</a></li>
+        <li><a href="application-process.html">Application Process</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions"><a href="contact-us.html" class="btn btn-primary">Book Free Consultation</a></div>
+  </div>
+</header>
+
+<!-- HERO: catalog-style with filter pills, no big photo -->
+<section class="hero-catalog">
+  <div class="container">
+    <div class="top-row">
+      <div>
+        <span class="eyebrow">Find Your Path</span>
+        <h1>150+ programmes. <br>One that's right for you.</h1>
+        <p class="lead">From secondary school through doctoral research, browse the routes we help students take into the world's best universities.</p>
+      </div>
+      <div>
+        <div style="font-size: 0.78rem; letter-spacing: 0.18em; color: var(--muted); font-weight: 700; margin-bottom: 12px;">FILTER BY LEVEL</div>
+        <div class="cat-pills">
+          <a href="#all" class="on">All</a>
+          <a href="primary-secondary.html">School</a>
+          <a href="undergraduate.html">Bachelor's</a>
+          <a href="postgraduate.html">Master's</a>
+          <a href="phd.html">PhD</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 LEVEL TILES (asymmetric — larger first card, two stacked, then full-width) -->
+<section class="section-sm">
+  <div class="container" id="all">
+    <div class="grid-2" style="gap: 24px;">
+      <a href="primary-secondary.html" class="card" style="grid-row: span 2; text-decoration:none;">
+        <div class="img img-fallback-4" style="aspect-ratio: auto; min-height: 380px;"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Ages 5–18</span></div>
+          <h3 style="font-size: 1.4rem;">Primary & Secondary</h3>
+          <p class="desc">Day and boarding placement at top UK schools, plus GCSE, A-level and IB pathways at over 200 partner institutions.</p>
+          <span class="more">Explore Schools <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a href="undergraduate.html" class="card" style="text-decoration:none;">
+        <div class="img img-fallback-2" style="aspect-ratio: 16/9;"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">3–4 years</span></div>
+          <h3>Undergraduate</h3>
+          <p class="desc">Bachelor's degrees across business, computing, engineering, sciences, and the arts.</p>
+          <span class="more">Browse Bachelor's <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a href="postgraduate.html" class="card" style="text-decoration:none;">
+        <div class="img img-fallback-5" style="aspect-ratio: 16/9;"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">1–2 years</span></div>
+          <h3>Postgraduate</h3>
+          <p class="desc">Master's and MBA programmes to specialise, pivot, or accelerate your career.</p>
+          <span class="more">Browse Master's <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a href="phd.html" class="card" style="grid-column: span 2; text-decoration:none;">
+        <div style="display:grid; grid-template-columns: 1fr 1.4fr; min-height: 220px;">
+          <div class="img img-fallback-3" style="aspect-ratio: auto;"></div>
+          <div class="body" style="padding: 30px;">
+            <div class="tags"><span class="tag">3–5 years</span><span class="tag">71% funded</span></div>
+            <h3 style="font-size: 1.4rem;">PhD & Research</h3>
+            <p class="desc" style="font-size: 0.95rem;">Doctoral research and supervisor matching across STEM, social sciences, humanities, law, and the life sciences.</p>
+            <span class="more">Explore Doctoral <span class="arr">→</span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE TABLE (NEW component, not on home) -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Side By Side</span>
+      <h2>Which level is right for you?</h2>
+      <p class="lead tight">A quick comparison of what to expect at each programme level. Click through any column for full details.</p>
+    </div>
+    <div class="compare">
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Primary & Secondary</th>
+            <th>Undergraduate</th>
+            <th>Postgraduate</th>
+            <th>PhD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Typical age</td>
+            <td>5–18</td>
+            <td>18–22</td>
+            <td>22+</td>
+            <td>24+</td>
+          </tr>
+          <tr>
+            <td>Length</td>
+            <td>1–13 years</td>
+            <td>3–4 years</td>
+            <td>1–2 years</td>
+            <td>3–5 years</td>
+          </tr>
+          <tr>
+            <td>Entry requirement</td>
+            <td>Age-appropriate</td>
+            <td>A-levels / IB</td>
+            <td>Bachelor's (2:1+)</td>
+            <td>Master's typical</td>
+          </tr>
+          <tr>
+            <td>Annual fees (intl)</td>
+            <td>£25k–£55k</td>
+            <td>£15k–£28k</td>
+            <td>£18k–£40k</td>
+            <td>£20k–£28k</td>
+          </tr>
+          <tr>
+            <td>Scholarships available</td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Post-study work rights (UK)</td>
+            <td><span class="no">—</span></td>
+            <td>2 years</td>
+            <td>2 years</td>
+            <td>3 years</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED COURSES (carry-over from home but slightly varied — 3 cards instead of 6, larger format) -->
+<section class="section">
+  <div class="container">
+    <div class="section-head left">
+      <span class="eyebrow">Most Popular</span>
+      <div style="display:flex; justify-content:space-between; align-items:end; gap:24px; flex-wrap:wrap;">
+        <div>
+          <h2>The courses students apply for most</h2>
+          <p class="lead">Three programmes that fill up early every intake — get your application in soon.</p>
+        </div>
+        <a href="#all" class="btn btn-primary">All Programmes →</a>
+      </div>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="img img-fallback-1"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Foundation</span><span class="tag">9 months</span></div>
+          <h3>International Foundation Programme</h3>
+          <p class="desc">Designed for international students to meet UK university entry requirements. Covers academic skills, English language, and subject knowledge.</p>
+          <span class="more">Explore the Course <span class="arr">→</span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img img-fallback-2"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Postgraduate</span><span class="tag">1–2 years</span></div>
+          <h3>MSc International Business & Human Resources</h3>
+          <p class="desc">An advanced programme covering global business strategy, international HR management, and cross-cultural leadership.</p>
+          <span class="more">Explore the Course <span class="arr">→</span></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img img-fallback-4"></div>
+        <div class="body">
+          <div class="tags"><span class="tag">Undergraduate</span><span class="tag">4 years</span></div>
+          <h3>BSc (Hons) Computing with AI</h3>
+          <p class="desc">An industry-aligned degree combining software engineering with cutting-edge machine learning and artificial intelligence.</p>
+          <span class="more">Explore the Course <span class="arr">→</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DARK CTA (not coral — different feel from home) -->
+<section class="section">
+  <div class="container">
+    <div class="cta-dark">
+      <div>
+        <h2>Not sure where to start?</h2>
+        <p>Tell us your goals and we'll send you a personal shortlist of 3–5 programmes that fit your profile, budget, and timeline.</p>
+      </div>
+      <div class="actions">
+        <a href="contact-us.html" class="btn btn-primary">Get My Shortlist →</a>
+        <a href="application-process.html" class="btn btn-outline">How It Works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="top">
+      <div><h3>Trusted. Expert. Dedicated to your success.</h3></div>
+      <div>
+        <p>Stay tuned and subscribe to our newsletter</p>
+        <form class="sub-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="links-row">
+      <div>
+        <h4>ABOUT E-KLAZ</h4>
+        <p style="font-size:0.92rem;">E-Klaz Profit is a UK-based international education consultancy helping students from around the world gain admission to top universities.</p>
+        <div class="socials"><a href="#">📷</a><a href="#">𝕏</a><a href="#">in</a><a href="#">f</a></div>
+      </div>
+      <div>
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="application-process.html">Application Process</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PROGRAMMES</h4>
+        <ul>
+          <li><a href="primary-secondary.html">Primary & Secondary</a></li>
+          <li><a href="undergraduate.html">Undergraduate</a></li>
+          <li><a href="postgraduate.html">Postgraduate</a></li>
+          <li><a href="phd.html">PhD & Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <ul>
+          <li>info@eklaz.com</li>
+          <li>+44 203 239 8420</li>
+          <li>138C Benares Road, London SE18 1HT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© Copyright 2026 E-Klaz. All Rights Reserved.</div>
+      <div class="right"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

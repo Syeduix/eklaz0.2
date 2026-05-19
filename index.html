@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Klaz Inner Page Designs — Overview</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .overview-hero { background: var(--cream); padding: 80px 0 60px; text-align: center;}
+  .overview-hero h1 { font-family: var(--f-serif); font-weight: 500; font-size: clamp(2.2rem, 4.5vw, 3.6rem); max-width: 820px; margin: 0 auto 16px; letter-spacing: -0.025em;}
+  .overview-hero h1 em { color: var(--coral); font-style: italic;}
+  .overview-hero p { max-width: 640px; margin: 0 auto; color: var(--muted); font-size: 1.05rem;}
+  .preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;}
+  @media (max-width: 900px){ .preview-grid { grid-template-columns: 1fr 1fr;}}
+  @media (max-width: 600px){ .preview-grid { grid-template-columns: 1fr;}}
+  .preview { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); transition: transform .2s ease, box-shadow .2s ease; display: flex; flex-direction: column;}
+  .preview:hover { transform: translateY(-3px); box-shadow: var(--shadow-card);}
+  .preview .thumb { aspect-ratio: 16/10; position: relative; overflow: hidden;}
+  .preview .thumb .label { position: absolute; bottom: 12px; left: 12px; background: rgba(255,255,255,0.95); padding: 5px 12px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: var(--ink);}
+  .preview .body { padding: 22px; flex: 1; display: flex; flex-direction: column;}
+  .preview h3 { font-size: 1.1rem; margin-bottom: 6px;}
+  .preview .file { font-family: monospace; font-size: 0.78rem; color: var(--muted); margin-bottom: 12px;}
+  .preview p { font-size: 0.88rem; color: var(--muted); margin: 0 0 16px; flex: 1;}
+  .preview .hero-tag { font-size: 0.72rem; color: var(--coral); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 8px;}
+  .preview a.open { display: inline-flex; align-items: center; gap: 8px; color: var(--coral); font-weight: 600; font-size: 0.9rem;}
+  .preview a.open .arr { width: 22px; height: 22px; border-radius: 50%; background: var(--coral); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 0.7rem;}
+  .stack { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 20px;}
+  @media (max-width: 800px){ .stack { grid-template-columns: 1fr 1fr;}}
+  .stack-item { background: var(--cream); border-radius: var(--radius); padding: 22px;}
+  .stack-item .icon { width: 44px; height: 44px; border-radius: 12px; background: var(--coral-soft); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 14px;}
+  .stack-item h4 { font-size: 1rem; margin-bottom: 6px;}
+  .stack-item p { font-size: 0.85rem; color: var(--muted); margin: 0;}
+</style>
+</head>
+<body>
+
+<section class="overview-hero">
+  <div class="container">
+    <span class="eyebrow">Design Delivery</span>
+    <h1>E-Klaz inner page designs — <em>eight unique layouts</em></h1>
+    <p>Each page uses the approved home-page design system (colors, fonts, header, footer, buttons) but introduces its own hero treatment and section components so no two pages feel the same.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="preview-grid">
+
+      <a href="about.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-1">
+          <span class="label">EDITORIAL HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 01</div>
+          <h3>About Us</h3>
+          <div class="file">about.html</div>
+          <p>Centered serif headline (no image), manifesto coral block, vertical timeline (2014→2026), numbered principles, team grid, dark outcomes strip.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="programmes.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-2">
+          <span class="label">CATALOG HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 02</div>
+          <h3>Programmes</h3>
+          <div class="file">programmes.html</div>
+          <p>Category-pill hero (no image), asymmetric level tiles, full comparison table across all 4 levels, 3 featured courses, dark CTA.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="application-process.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-3">
+          <span class="label">STEPPED HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 03</div>
+          <h3>Application Process</h3>
+          <div class="file">application-process.html</div>
+          <p>Side pip-list of 8 steps as hero, vertical zig-zag journey, document checklist row, 2-column FAQ, coral CTA band.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="contact-us.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-4">
+          <span class="label">SPLIT + FORM</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 04</div>
+          <h3>Contact Us</h3>
+          <div class="file">contact-us.html</div>
+          <p>Form already visible in hero (left: info cards / right: form), 4-office strip (London HQ + Lagos/Nairobi/Mumbai), map block, quiet CTA.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="primary-secondary.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-5">
+          <span class="label">COLLAGE HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 05</div>
+          <h3>Primary & Secondary</h3>
+          <div class="file">primary-secondary.html</div>
+          <p>4-image collage hero with floating badge, age-band selector (5–11 / 11–16 / 16–18), parent testimonial as quote-led card, pastel 4-step process.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="undergraduate.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-2">
+          <span class="label">STATS HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 06</div>
+          <h3>Undergraduate</h3>
+          <div class="file">undergraduate.html</div>
+          <p>Stats-as-visual hero (4 big-stat cards with pastel corner accents), 4 entry routes, 6 featured courses, university strip, dark outcomes.</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="postgraduate.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-1">
+          <span class="label">QUOTE HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 07</div>
+          <h3>Postgraduate</h3>
+          <div class="file">postgraduate.html</div>
+          <p>Testimonial-as-hero with portrait + floating stat card, 4 programme-type cards (MSc/MA/MBA/LLM), 6 featured courses, funding-grid (Chevening + 2).</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <a href="phd.html" class="preview" style="text-decoration: none;">
+        <div class="thumb img-fallback-3">
+          <span class="label">ACADEMIC HERO</span>
+        </div>
+        <div class="body">
+          <div class="hero-tag">PAGE 08</div>
+          <h3>PhD & Research</h3>
+          <div class="file">phd.html</div>
+          <p>Minimal serif hero with side supervisor-quote card, 2×4 research disciplines grid with topic tags, 4-step process, funding-grid (UKRI / Commonwealth / CDT).</p>
+          <span class="open">Open page <span class="arr">→</span></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section bg-cream">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What's Consistent</span>
+      <h2>The shared design system holding it all together</h2>
+      <p class="lead tight">Different layouts, identical foundations. Every page uses the same colors, fonts, header, footer, and button treatments from the approved home page.</p>
+    </div>
+    <div class="stack">
+      <div class="stack-item">
+        <div class="icon">🎨</div>
+        <h4>Colors</h4>
+        <p>Coral primary, cream backgrounds, navy footer, and pastel accents — exactly as the home page.</p>
+      </div>
+      <div class="stack-item">
+        <div class="icon">🔤</div>
+        <h4>Typography</h4>
+        <p>Plus Jakarta Sans for UI, Caveat script for eyebrows, Fraunces serif added for editorial display.</p>
+      </div>
+      <div class="stack-item">
+        <div class="icon">🧭</div>
+        <h4>Header & Nav</h4>
+        <p>Identical sticky header, top utility bar, primary nav, and call-to-action button on every page.</p>
+      </div>
+      <div class="stack-item">
+        <div class="icon">📐</div>
+        <h4>Footer</h4>
+        <p>Dark navy footer with newsletter form, 4-column links, and contact info — consistent across all 8 pages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-quiet">
+      <div>
+        <span class="eyebrow">Notes for Implementation</span>
+        <h2>How to read this delivery</h2>
+        <p style="margin-top: 8px;">All images use coral/pastel gradient placeholders for now — these are designed to be swapped with real photography when the site is integrated into WordPress. Every section is built with the same styles.css so editing is centralised.</p>
+      </div>
+      <div class="actions">
+        <a href="about.html" class="btn btn-primary">Start Reviewing →</a>
+        <a href="styles.css" class="btn btn-outline">View styles.css</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

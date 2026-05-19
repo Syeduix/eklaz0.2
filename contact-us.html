@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — E-Klaz</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .info-card { background: var(--cream); border-radius: var(--radius); padding: 24px; display:flex; gap:16px; align-items:flex-start; margin-bottom: 14px;}
+  .info-card .ic { width: 46px; height: 46px; border-radius: 12px; background: var(--coral-soft); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;}
+  .info-card h4 { font-size:1rem; margin-bottom: 4px;}
+  .info-card p { font-size:0.92rem; color: var(--muted); margin:0;}
+  .map-block { background: var(--cream-2); border-radius: var(--radius); aspect-ratio: 16/6; display:flex; align-items:center; justify-content:center; color: var(--muted); position:relative; overflow:hidden;}
+  .map-pin { position:absolute; top: 40%; left: 30%; width: 36px; height: 36px; border-radius: 50% 50% 50% 0; background: var(--coral); transform: rotate(-45deg); box-shadow: 0 4px 14px rgba(232,74,44,.4);}
+  .map-pin::after { content:""; width: 12px; height:12px; background:#fff; border-radius:50%; position:absolute; top: 12px; left: 12px;}
+  .office-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display:flex; flex-direction:column; gap: 8px;}
+  .office-card .flag { font-size: 1.6rem; line-height: 1;}
+  .office-card h4 { font-size: 1.1rem; margin: 6px 0;}
+  .office-card .addr { font-size: 0.88rem; color: var(--muted);}
+  .office-card .meta { font-size: 0.78rem; color: var(--coral); letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; margin-top: auto; padding-top: 16px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container row">
+    <div>📧 info@eklaz.com &nbsp;&nbsp; 📞 +44 203 239 8420</div>
+    <div class="links"><a href="#">🌐 English</a><a href="#">Student Login</a></div>
+  </div>
+</div>
+<header class="site">
+  <div class="container row">
+    <a href="index.html" class="logo">E <span class="dot">·</span> KLAZ</a>
+    <nav class="primary">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="application-process.html">Application Process</a></li>
+        <li><a href="contact-us.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions"><a href="#form" class="btn btn-primary">Send Message</a></div>
+  </div>
+</header>
+
+<!-- HERO: split with form ALREADY visible (no separate hero+form sections) -->
+<section class="hero-split">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's talk about your <br>education plans.</h1>
+        <p class="lead" style="margin-bottom: 28px;">Whether you're ready to start your application or just exploring options, our advisors reply within one working day. No pressure, no sales pitch.</p>
+        <div class="info-card">
+          <div class="ic">📞</div>
+          <div>
+            <h4>Call us directly</h4>
+            <p>+44 203 239 8420 · Mon–Fri 9 AM–6 PM GMT</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="ic">📧</div>
+          <div>
+            <h4>Email any time</h4>
+            <p>info@eklaz.com · reply within 1 working day</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="ic">💬</div>
+          <div>
+            <h4>WhatsApp for quick questions</h4>
+            <p>Message us and an advisor will respond shortly</p>
+          </div>
+        </div>
+      </div>
+      <form class="form" id="form" onsubmit="event.preventDefault(); alert('Thanks! We will be in touch within one working day.');">
+        <h3 style="margin-bottom: 6px;">Send us a message</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 22px;">All fields marked * are required.</p>
+        <div class="form-row">
+          <div>
+            <label>First Name *</label>
+            <input type="text" required placeholder="Your first name">
+          </div>
+          <div>
+            <label>Last Name *</label>
+            <input type="text" required placeholder="Your last name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>Email *</label>
+            <input type="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="tel" placeholder="+44 ...">
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>I'm interested in *</label>
+            <select required>
+              <option value="">Select a level</option>
+              <option>Primary & Secondary</option>
+              <option>Undergraduate</option>
+              <option>Postgraduate</option>
+              <option>PhD & Research</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
+            <label>Preferred country</label>
+            <select>
+              <option value="">No preference</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Australia</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label>Tell us about your goals</label>
+          <textarea placeholder="Briefly: what are you hoping to study, when, and any context that helps us advise you?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES STRIP (NEW — not used elsewhere) -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Locations</span>
+      <h2>Where you can find us</h2>
+      <p class="lead tight">Headquartered in London with regional partner offices across our largest student markets.</p>
+    </div>
+    <div class="grid-4">
+      <div class="office-card">
+        <div class="flag">🇬🇧</div>
+        <h4>London <span style="color: var(--coral); font-size: 0.85rem; font-weight: 600;">HQ</span></h4>
+        <div class="addr">138C Benares Road<br>London SE18 1HT<br>United Kingdom</div>
+        <div class="meta">Mon–Fri · 9–6 GMT</div>
+      </div>
+      <div class="office-card">
+        <div class="flag">🇳🇬</div>
+        <h4>Lagos</h4>
+        <div class="addr">Partner office<br>Victoria Island<br>Nigeria</div>
+        <div class="meta">By appointment</div>
+      </div>
+      <div class="office-card">
+        <div class="flag">🇰🇪</div>
+        <h4>Nairobi</h4>
+        <div class="addr">Partner office<br>Westlands<br>Kenya</div>
+        <div class="meta">By appointment</div>
+      </div>
+      <div class="office-card">
+        <div class="flag">🇮🇳</div>
+        <h4>Mumbai</h4>
+        <div class="addr">Partner office<br>Bandra Kurla Complex<br>India</div>
+        <div class="meta">By appointment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP block -->
+<section class="section-sm">
+  <div class="container">
+    <div class="map-block">
+      <div class="map-pin"></div>
+      <div style="position:relative; z-index:2; background:#fff; padding: 14px 22px; border-radius: 14px; box-shadow: var(--shadow-card); font-weight:600; font-size:0.9rem;">
+        📍 E-Klaz HQ · 138C Benares Road, London SE18 1HT
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quiet CTA — different feel from coral band -->
+<section class="section">
+  <div class="container">
+    <div class="cta-quiet">
+      <div>
+        <span class="eyebrow">Prefer to talk?</span>
+        <h2>Book a 30-minute video call</h2>
+        <p>Sometimes a conversation is easier than typing it all out. We have video slots Monday to Saturday.</p>
+      </div>
+      <div class="actions">
+        <a href="#form" class="btn btn-primary">Book a Slot →</a>
+        <a href="programmes.html" class="btn btn-outline">Browse Programmes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="top">
+      <div><h3>Trusted. Expert. Dedicated to your success.</h3></div>
+      <div>
+        <p>Stay tuned and subscribe to our newsletter</p>
+        <form class="sub-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="links-row">
+      <div>
+        <h4>ABOUT E-KLAZ</h4>
+        <p style="font-size:0.92rem;">E-Klaz Profit is a UK-based international education consultancy helping students from around the world gain admission to top universities.</p>
+        <div class="socials"><a href="#">📷</a><a href="#">𝕏</a><a href="#">in</a><a href="#">f</a></div>
+      </div>
+      <div>
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="application-process.html">Application Process</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PROGRAMMES</h4>
+        <ul>
+          <li><a href="primary-secondary.html">Primary & Secondary</a></li>
+          <li><a href="undergraduate.html">Undergraduate</a></li>
+          <li><a href="postgraduate.html">Postgraduate</a></li>
+          <li><a href="phd.html">PhD & Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <ul>
+          <li>info@eklaz.com</li>
+          <li>+44 203 239 8420</li>
+          <li>138C Benares Road, London SE18 1HT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© Copyright 2026 E-Klaz. All Rights Reserved.</div>
+      <div class="right"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
